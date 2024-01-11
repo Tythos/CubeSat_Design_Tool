@@ -1,4 +1,8 @@
-class CDH:
+"""
+Models and supports structural subsystems
+"""
+
+class Structures:
     def __init__(self):
         self.P_peak = 0
         self.P_transmit = 0

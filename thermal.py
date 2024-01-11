@@ -1,4 +1,8 @@
-class Payload:
+"""
+Models and supports thermal subsystems
+"""
+
+class Thermal:
     def __init__(self):
         self.P_peak = 0
         self.P_transmit = 0
@@ -9,5 +13,3 @@ class Payload:
         self.P_2 = 0
         self.P_3 = 0
         self.P_4 = 0
-
-        self.D_pay = 0

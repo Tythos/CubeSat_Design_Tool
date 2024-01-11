@@ -1,8 +1,10 @@
+"""
+Models and supports design orbits
+"""
+
 import math as m
-#import numpy as np
 import tkinter as tk
 from tkinter import ttk
-
 
 class Orbits:
     def __init__(self):

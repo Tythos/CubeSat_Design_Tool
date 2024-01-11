@@ -9,7 +9,7 @@ class PowerTool:
         # Read in Assumptions from File
         if p.design_option == 'Custom':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file) 
                 self.var = ['']
                 self.var_name = ['']
@@ -58,7 +58,7 @@ class PowerTool:
                 p.per_margin = float(self.data[8])
         elif p.design_option == 'Standard':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file)
                 self.var = ['']
                 self.var_name = ['']
@@ -91,7 +91,7 @@ class PowerTool:
                 p.per_margin = self.data[8]
         elif p.design_option == 'Advanced':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file)
                 self.var = ['']
                 self.var_name = ['']
@@ -247,7 +247,7 @@ class PowerTool:
         # Read in Assumptions from File
         if p.design_option == 'Custom':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file) 
                 self.var = ['']
                 self.var_name = ['']
@@ -295,7 +295,7 @@ class PowerTool:
                 p.per_margin = self.data[8]
         elif p.design_option == 'Standard':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file)
                 self.var = ['']
                 self.var_name = ['']
@@ -328,7 +328,7 @@ class PowerTool:
                 p.per_margin = self.data[8]
         elif p.design_option == 'Advanced':
             # Read in Design Option 
-            with open('powerAssumptions.csv', mode='r') as file:
+            with open('data_models/powerAssumptions.csv', mode='r') as file:
                 reader = csv.reader(file)
                 self.var = ['']
                 self.var_name = ['']
@@ -497,7 +497,7 @@ class PowerTool:
         return p
 
     def writeData(self, pd):
-        with open('outputParameters.csv', mode='w') as parameters:
+        with open('data_models/outputParameters.csv', mode='w') as parameters:
             paramWriter = csv.writer(parameters, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             self.dataList = [self.data[1],
                             pd.UseCase,

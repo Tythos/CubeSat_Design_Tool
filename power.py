@@ -1,6 +1,9 @@
+"""
+Models and suppport power requirements & subsystems
+"""
+
 import tkinter as tk
 from tkinter import ttk
-        
 
 class Power:
     def __init__(self):

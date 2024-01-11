@@ -1,4 +1,8 @@
-class ADCS:
+"""
+Models and supports guidance, navigation, and control subsystems
+"""
+
+class GNC:
     def __init__(self):
         self.P_peak = 0
         self.P_transmit = 0
@@ -9,5 +13,4 @@ class ADCS:
         self.P_2 = 0
         self.P_3 = 0
         self.P_4 = 0
-
-        self.D_ADCS = 0
+        

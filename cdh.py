@@ -1,4 +1,8 @@
-class Thermal:
+"""
+Models and supports "command data handling" subsystem
+"""
+
+class CDH:
     def __init__(self):
         self.P_peak = 0
         self.P_transmit = 0
